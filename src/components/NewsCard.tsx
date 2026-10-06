@@ -12,7 +12,6 @@ interface News{
 }
 
 const NewsCard = ({news}: {news: News}) => {
-    // console.log(news)
     return (
                    <Link href={`/news/${news.id}`}>
                     <div className="card bg-base-100 shadow-sm">

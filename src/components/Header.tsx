@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import React from 'react';
 import NavLinks from '../components/NavLinks';
+import UserInfo from './UserInfo';
 
 const Header = () => {
     const date = new Date().toLocaleDateString("bn-BD", {
@@ -17,10 +18,7 @@ const Header = () => {
                     <p className="ml-2 font-semibold">{date}</p>
                 </div>
             </div>
-            <div className= "absolute right-4 top-4 flex items-center gap-3 text-sm">
-                <button className="btn">সাইন ইন</button>
-                <button className="btn bg-[#C10007] text-white">সাইন আপ</button>
-            </div>
+            <UserInfo />
 
             <NavLinks/>
             

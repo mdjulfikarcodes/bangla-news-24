@@ -1,16 +1,27 @@
+
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+
   images: {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "ichef.bbci.co.uk"
-      }
-    ]
-  }
+        hostname: "ichef.bbci.co.uk",
+      },
+      {
+        protocol: "https",
+        hostname: "accounts.google.com",
+      },
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "3000",
+      },
+    ],
+  },
 };
 
 export default nextConfig;
+

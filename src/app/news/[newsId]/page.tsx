@@ -1,4 +1,5 @@
 
+import { notFound } from "next/navigation";
 import React from "react";
 
 const NewsDetails = async ({
@@ -34,6 +35,10 @@ const NewsDetails = async ({
   }
 
   const news = data.data;
+
+  if(!news){
+    notFound();
+  }
 
   return (
     <div className="container mx-auto py-10">

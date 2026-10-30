@@ -1,6 +1,5 @@
 
 import Image from 'next/image';
-import React from 'react';
 import NavLinks from '../components/NavLinks';
 import UserInfo from './UserInfo';
 
